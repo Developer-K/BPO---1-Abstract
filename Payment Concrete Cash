@@ -1,0 +1,13 @@
+// Kelas konkret PembayaranTunai
+class PembayaranTunai extends Pembayaran {
+
+    public PembayaranTunai(int idPembayaran, String namaPelanggan, double jumlahPembayaran) {
+        super(idPembayaran, namaPelanggan, jumlahPembayaran);
+        this.metodePembayaran = "Tunai";
+    }
+
+    @Override
+    public String getMetodePembayaran() {
+        return metodePembayaran;
+    }
+}
